@@ -1,10 +1,10 @@
-import os
 import boto3
+import os
 
 ec2 = boto3.client("ec2")
 sns = boto3.client("sns")
 
-SNS_TOPIC_ARN = os.environ["SNS_TOPIC_ARN"]
+SNS_TOPIC_ARN = os.environ.get("SNS_TOPIC_ARN")
 
 
 def lambda_handler(event, context):
@@ -40,20 +40,20 @@ def lambda_handler(event, context):
 
                 deleted_snapshots.append(snapshot_id)
 
-    # Send notification through SNS
     message = (
         "AWS Cost Optimization Cleanup Report\n\n"
         f"Deleted snapshots: {deleted_snapshots}\n"
         f"Total deleted: {len(deleted_snapshots)}"
     )
 
-    sns.publish(
-        TopicArn=SNS_TOPIC_ARN,
-        Subject="AWS Cost Optimization Cleanup Report",
-        Message=message
-    )
-
     print(message)
+
+    if SNS_TOPIC_ARN and deleted_snapshots:
+        sns.publish(
+            TopicArn=SNS_TOPIC_ARN,
+            Subject="AWS Cost Optimization Cleanup Alert",
+            Message=message
+        )
 
     return {
         "statusCode": 200,
