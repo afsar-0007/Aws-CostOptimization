@@ -14,15 +14,11 @@ def lambda_handler(event, context):
     )["Snapshots"]
 
     deleted_snapshots = []
-
     for snapshot in snapshots:
-
         snapshot_id = snapshot["SnapshotId"]
         volume_id = snapshot.get("VolumeId")
-
         if not volume_id:
             continue
-
         try:
             ec2.describe_volumes(
                 VolumeIds=[volume_id]

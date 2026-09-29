@@ -1,0 +1,7 @@
+Rename-Item "screenshots\Vs -code.png" "architecture.png"
+Rename-Item "screenshots\Lambda code.png" "lambda-code.png"
+Rename-Item "screenshots\CI.png" "github-actions.png"
+Rename-Item "screenshots\Cloudwatch -logs.png" "cloudwatch-logs.png"
+Rename-Item "screenshots\Cloud-trail.png" "cloudtrail.png"
+Rename-Item "screenshots\Email.png" "sns-email.png"
+Rename-Item "screenshots\Lambda-execution.png" "lambda-execution.png"
