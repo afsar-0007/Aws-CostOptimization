@@ -1,7 +1,1 @@
-Rename-Item "screenshots\Vs -code.png" "architecture.png"
-Rename-Item "screenshots\Lambda code.png" "lambda-code.png"
-Rename-Item "screenshots\CI.png" "github-actions.png"
-Rename-Item "screenshots\Cloudwatch -logs.png" "cloudwatch-logs.png"
-Rename-Item "screenshots\Cloud-trail.png" "cloudtrail.png"
-Rename-Item "screenshots\Email.png" "sns-email.png"
-Rename-Item "screenshots\Lambda-execution.png" "lambda-execution.png"
+c:\Users\Mansoor Sohail\OneDrive\Desktop\Cloud-trail.png c:\Users\Mansoor Sohail\OneDrive\Desktop\Email.png c:\Users\Mansoor Sohail\OneDrive\Desktop\Lambda-execution.png c:\Users\Mansoor Sohail\OneDrive\Desktop\Vs -code.png c:\Users\Mansoor Sohail\OneDrive\Desktop\Lambda code.png c:\Users\Mansoor Sohail\OneDrive\Desktop\CI.png c:\Users\Mansoor Sohail\OneDrive\Desktop\Cloudwatch -logs.png
