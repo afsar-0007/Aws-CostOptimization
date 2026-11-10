@@ -213,4 +213,3 @@ End-to-end AWS resource cleanup validation
 
 The goal of this project is to demonstrate how AWS, Terraform, Python, and DevOps automation can be combined to reduce unnecessary cloud resource usage while maintaining monitoring, security, and automated deployment.
 
-👨‍💻 Author
